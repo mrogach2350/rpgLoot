@@ -32,7 +32,7 @@ raix:handlebar-helpers
 accounts-ui
 accounts-password
 matb33:bootstrap-glyphicons
-msavin:jetsetter
 zimme:active-route
 gwendall:auth-client-callbacks
 twbs:bootstrap
+meteortoys:allthings
