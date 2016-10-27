@@ -1,4 +1,10 @@
-Items = new Meteor.Collection('items');
+Items = new Mongo.Collection('items');
+
+Items.allow({
+  insert: function(userId, doc) {
+    return !!userId;
+  }
+});
 
 ItemSchema = new SimpleSchema({
   name: {
@@ -9,11 +15,32 @@ ItemSchema = new SimpleSchema({
     type: String,
     label: "Description"
   },
+  weight: {
+    type: Number,
+    label: "Weight"
+  },
+  quantity: {
+    type: Number,
+    label: "Quantity"
+  },
+  owner: {
+    type: String,
+    label: "Owner",
+    autoValue: function(){
+      return this.userId
+    },
+    autoform: {
+      type: "hidden"
+    }
+  },
   createdAt: {
     type: Date,
     label: "Created At",
     autoValue: function(){
       return new Date()
+    },
+    autoform: {
+      type: "hidden"
     }
   }
 });
