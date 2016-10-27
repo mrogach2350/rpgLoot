@@ -1,13 +1,29 @@
 /* CSS declarations go here */
-/*.box {
-  border: 2px solid black;
-  min-height: 60vh;
-
-}*/
 body {
+  background: rgba(0, 0, 0, 0.5);
+}
+nav {
+  width: 100vw;
+}
+footer{
+  background: rgb(231, 231, 231);
+  height: 5vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+}
+.row {
   margin: 5vh 2vw;
   width: 90vw;
 }
-nav {
-  width: 95vw;
+/*HomeLayout.html*/
+#about{
+  background: rgba(255, 0, 0, 0.5);;
+}
+
+#register {
+  background: rgba(0, 255, 0, 0.5);;
 }
