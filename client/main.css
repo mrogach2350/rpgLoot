@@ -17,7 +17,6 @@ footer{
 }
 .row {
   margin: 5vh 2vw;
-  width: 90vw;
 }
 /*HomeLayout.html*/
 #about{
@@ -26,4 +25,7 @@ footer{
 
 #register {
   background: rgba(0, 255, 0, 0.5);;
+}
+#login-buttons {
+  line-height: 50px;
 }
