@@ -1,9 +1,13 @@
 <template name="MainLayout">
   <header class="container">
     <h1>My Stash</h1>
-    {{> loginButtons}}
   </header>
   <main>
+    <div class="col-md-6 col-xs-12">
       {{> Template.dynamic template=main}}
+    </div>
+    <div class="col-md-6 col-xs-12">
+      {{> Template.dynamic template=addItem}}
+    </div>
   </main>
 </template>
