@@ -42,6 +42,16 @@ ItemSchema = new SimpleSchema({
     autoform: {
       type: "hidden"
     }
+  },
+  inGroupStash: {
+    type: Boolean,
+    label: 'In Group Stash',
+    autoValue: function(){
+      return false;
+    },
+    autoform: {
+      type: "hidden"
+    }
   }
 });
 
