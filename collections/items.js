@@ -39,7 +39,6 @@ ItemSchema = new SimpleSchema({
       type: "hidden"
     }
   },
-  
   createdAt: {
     type: Date,
     label: "Created At",
