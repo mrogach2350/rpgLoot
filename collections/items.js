@@ -29,12 +29,20 @@ ItemSchema = new SimpleSchema({
     type: Number,
     label: "Quantity"
   },
-  owner: {
+  session: {
     type: String,
-    label: "Owner",
+    label: "Session",
     autoValue: function(){
       return this.userId
     },
+    autoform: {
+      type: "hidden"
+    }
+  },
+  owner: {
+    type: String,
+    label: "Owner",
+    defaultValue: "DM",
     autoform: {
       type: "hidden"
     }
