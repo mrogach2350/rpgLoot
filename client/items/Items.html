@@ -1,0 +1,35 @@
+<template name="Items">
+  <div class="title box">
+    DM's stash
+  </div>
+  <div class="row title-row">
+    <div class="box col-xs-2">
+      Move
+    </div>
+    <div class="box col-xs-3">
+      Name
+    </div>
+    <div class="box col-xs-4">
+      Description
+    </div>
+    <div class="box col-xs-1">
+      Wt
+    </div>
+    <div class="box col-xs-1">
+      Qty
+    </div>
+    <div class="box col-xs-1">
+      Dlt
+    </div>
+  </div>
+  {{#each items}}
+    <div class="row item-row">
+      <button class="box col-xs-2 toggle-group" type="button">Group</button>
+      <span class="box col-xs-3">{{ name }}</span>
+      <span class="box col-xs-4">{{ description }}</span>
+      <span class="box col-xs-1">{{ weight }}</span>
+      <span class="box col-xs-1">{{ quantity }}</span>
+      <button class="box delete col-xs-1">&times;</button>
+    </div>
+  {{/each}}
+</template>

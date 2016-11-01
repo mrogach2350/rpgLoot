@@ -20,14 +20,15 @@
           You will be directed to your very own rpgLoot Group Stash!
           The Group Stash will provide a place for you to imput rewards for your party
           before the session, and then make them available to the PCs when they have properly earned thier spoils.
+          <hr>
+          <span>Thank you for using rpgLoot, <br><strong>The DM (Digital Maker)</strong></span>
         </p>
         <div class="row">
-          <div class="col-md-5 col-xs-12">
-            <span class="container">{{> loginButtons}}</span> <br>
-            <a href="/DMview"><button type="button" name="button">Go To DM View</button></a>
-          </div>
-          <div class="col-md-7 col-xs-12">
-            <span>Thank you for using rpgLoot, <br><strong>The DM (Digital Maker)</strong></span>
+          <div class="col-xs-12">
+            {{#if currentUser}}
+            <a href="/DM"><button type="button" name="button">Go To DM View</button></a>
+            {{else}}
+            {{/if}}
           </div>
         </div>
       </div>

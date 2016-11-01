@@ -1,12 +1,16 @@
 <template name="MainLayout">
   <header class="container">
-    <h1>My Stash</h1>
-    {{> loginButtons}}
+    <h1 class="col-xs-8">DM's Console</h1>
+    <div class="col-xs-4">
+      {{> Template.dynamic template=buttons}}
+    </div>
   </header>
   <main>
-      {{> Template.dynamic template=main}}
-      <div class="col-md-6 col-xs-12">
-        {{> quickForm collection="Items" id="insertItemForm" type="insert" class="new-item-form"}}
-      </div>
+    <div class="col-md-6 col-xs-12">
+      {{> Template.dynamic template=first}}
+    </div>
+    <div class="col-md-6 col-xs-12">
+      {{> Template.dynamic template=second}}
+    </div>
   </main>
 </template>

@@ -17,7 +17,6 @@ footer{
 }
 .row {
   margin: 5vh 2vw;
-  width: 90vw;
 }
 /*HomeLayout.html*/
 #about{
@@ -26,4 +25,25 @@ footer{
 
 #register {
   background: rgba(0, 255, 0, 0.5);;
+}
+#login-buttons {
+  line-height: 50px;
+}
+.box {
+  border: 2px solid black;
+  height: 30px;
+}
+.title {
+  margin-bottom: 0;
+}
+.title-row, .item-row {
+  margin: 0 auto;
+}
+.title, .item-row, .title-row {
+  background: white;
+  width: 100%;
+  text-align: center;
+}
+.checked {
+  background: red;
 }

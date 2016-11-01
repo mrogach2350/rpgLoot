@@ -3,6 +3,12 @@ Items = new Mongo.Collection('items');
 Items.allow({
   insert: function(userId, doc) {
     return !!userId;
+  },
+  update: function(userId, doc) {
+    return !!userId;
+  },
+  remove: function(userId, doc) {
+    return !!userId;
   }
 });
 
@@ -42,7 +48,26 @@ ItemSchema = new SimpleSchema({
     autoform: {
       type: "hidden"
     }
+  },
+  inGroupStash: {
+    type: Boolean,
+    label: 'In Group Stash',
+    defaultValue: false,
+    autoform: {
+      type: "hidden"
+    }
   }
+});
+
+Meteor.methods({
+  toggleGroupItem: function(id, currentState) {
+    console.log('calling')
+      Items.update(id, {
+        $set: {
+          inGroupStash: !currentState
+        }
+      });
+    }
 });
 
 Items.attachSchema(ItemSchema);

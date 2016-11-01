@@ -1,12 +1,11 @@
 Meteor.subscribe('items');
 
-Template.Items.helpers({
+Template.GroupItems.helpers({
   items: ()=> {
-    return Items.find({inGroupStash: false});
+    return Items.find({inGroupStash: true});
   }
 });
-
-Template.Items.events({
+Template.GroupItems.events({
   'click .toggle-group'() {
     Meteor.call('toggleGroupItem', this._id, this.inGroupStash);
   },
