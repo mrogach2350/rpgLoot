@@ -29,3 +29,21 @@ footer{
 #login-buttons {
   line-height: 50px;
 }
+.box {
+  border: 2px solid black;
+  height: 30px;
+}
+.title {
+  margin-bottom: 0;
+}
+.title-row, .item-row {
+  margin: 0 auto;
+}
+.title, .item-row, .title-row {
+  background: white;
+  width: 100%;
+  text-align: center;
+}
+.checked {
+  background: red;
+}
