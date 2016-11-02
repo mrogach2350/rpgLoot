@@ -1,0 +1,35 @@
+<template name="allItems">
+  <div class="title box">
+    All Items
+  </div>
+  <div class="row title-row">
+    <div class="box col-xs-3">
+      Owner
+    </div>
+    <div class="box col-xs-3">
+      Name
+    </div>
+    <div class="box col-xs-4">
+      Description
+    </div>
+    <div class="box col-xs-1">
+      Wt
+    </div>
+    <div class="box col-xs-1">
+      Qty
+    </div>
+  </div>
+  {{#each items}}
+
+    <div class="row {{#if inGroupStash}}
+                      avail
+                    {{else}}
+                      unavail
+                    {{/if}} item-row">
+      <button class="box col-xs-3 toggle-group" type="button">{{owner}}</button>
+      <span class="box col-xs-3">{{ name }}</span>
+      <span class="box col-xs-4">{{ description }}</span>
+      <span class="box col-xs-1">{{ weight }}</span>
+      <span class="box col-xs-1">{{ quantity }}</span>    </div>
+  {{/each}}
+</template>
