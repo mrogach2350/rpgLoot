@@ -1,22 +1,26 @@
 Meteor.subscribe('items');
 
-Template.PlayerItems.helpers({
+Template.allItems.helpers({
   currentPlayer: ()=> {
     var current = FlowRouter.current();
     return current.params.characterName;
   },
-
   items: ()=> {
-    var current = FlowRouter.current();
-    return Items.find({owner: current.params.characterName, inGroupStash: false });
+    return Items.find({});
   }
 });
-
-Template.PlayerItems.events({
+Template.allItems.events({
   'click .toggle-group'() {
     Meteor.call('toggleGroupItem', this._id, this.inGroupStash);
-  },
 
+    var current = FlowRouter.current();
+    if (current.params.characterName){
+      newOwner = current.params.characterName;
+    } else {
+      newOwner = "DM";
+    }
+    Meteor.call('togglePlayerItem', this._id, newOwner );
+  },
   'click .delete'() {
     Items.remove(this._id);
   }

@@ -75,6 +75,13 @@ Meteor.methods({
         }
       });
     },
+    toggleDMItem: function(id) {
+        Items.update(id, {
+          $set: {
+            owner: 'Group'
+          }
+        });
+      },
     togglePlayerItem: function(id, newOwner) {
         Items.update(id, {
           $set: {
