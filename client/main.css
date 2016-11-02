@@ -1,6 +1,8 @@
 /* CSS declarations go here */
 body {
-  background: rgba(0, 0, 0, 0.5);
+  /*background-image: url('http://i.imgur.com/hIcFKqa.png');*/
+  background-image: url('http://i.imgur.com/EqBE9I8.png');
+  background-size: contain;
 }
 nav {
   width: 100vw;
@@ -22,9 +24,12 @@ footer{
 #about{
   background: rgba(255, 0, 0, 0.5);;
 }
-
 #register {
   background: rgba(0, 255, 0, 0.5);;
+}
+#about, #register {
+  margin-bottom: 5vh;
+  border: 5px solid black;
 }
 #login-buttons {
   line-height: 50px;
@@ -69,4 +74,11 @@ img {
 }
 .hidden {
   visibility: hidden;
+}
+.table {
+  margin-bottom: 5vh;
+}
+#gitLink, .portfolioLink {
+  color: black;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
