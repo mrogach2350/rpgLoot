@@ -15,7 +15,7 @@ Items.allow({
 ItemSchema = new SimpleSchema({
   name: {
     type: String,
-    label: "Name"
+    label: "Item Name"
   },
   description: {
     type: String,
