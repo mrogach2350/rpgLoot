@@ -29,6 +29,10 @@ PlayerSchema = new SimpleSchema({
     type: Number,
     label: "Level"
   },
+  imageUrl: {
+    type: String,
+    label: "Image URL"
+  },
   session: {
     type: String,
     label: "Session",
