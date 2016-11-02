@@ -67,9 +67,6 @@ Meteor.methods({
           inGroupStash: !currentState
         }
       });
-<<<<<<< Updated upstream
-    }
-=======
     },
     toggleDMItem: function(id) {
         Items.update(id, {
@@ -85,7 +82,6 @@ Meteor.methods({
           }
         });
       }
->>>>>>> Stashed changes
 });
 
 Items.attachSchema(ItemSchema);
