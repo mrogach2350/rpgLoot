@@ -67,7 +67,25 @@ Meteor.methods({
           inGroupStash: !currentState
         }
       });
+<<<<<<< Updated upstream
     }
+=======
+    },
+    toggleDMItem: function(id) {
+        Items.update(id, {
+          $set: {
+            owner: 'Group'
+          }
+        });
+      },
+    togglePlayerItem: function(id, newOwner) {
+        Items.update(id, {
+          $set: {
+            owner: newOwner
+          }
+        });
+      }
+>>>>>>> Stashed changes
 });
 
 Items.attachSchema(ItemSchema);
