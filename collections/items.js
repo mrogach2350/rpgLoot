@@ -74,7 +74,14 @@ Meteor.methods({
           inGroupStash: !currentState
         }
       });
-    }
+    },
+    togglePlayerItem: function(id, newOwner) {
+        Items.update(id, {
+          $set: {
+            owner: newOwner
+          }
+        });
+      }
 });
 
 Items.attachSchema(ItemSchema);
