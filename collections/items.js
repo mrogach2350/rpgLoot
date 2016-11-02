@@ -69,7 +69,6 @@ ItemSchema = new SimpleSchema({
 
 Meteor.methods({
   toggleGroupItem: function(id, currentState) {
-    console.log('calling')
       Items.update(id, {
         $set: {
           inGroupStash: !currentState
