@@ -75,7 +75,6 @@ Meteor.methods({
         }
       });
     },
-<<<<<<< HEAD
     toggleDMItem: function(id) {
         Items.update(id, {
           $set: {
@@ -83,8 +82,6 @@ Meteor.methods({
           }
         });
       },
-=======
->>>>>>> 1c91285ae9576a91c7850a75bed46cfea7788c4b
     togglePlayerItem: function(id, newOwner) {
         Items.update(id, {
           $set: {
