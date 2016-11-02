@@ -19,8 +19,11 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li class="main-login">{{> loginButtons}}</li>
+          {{#if currentUser}}
           <li><a href="/DM">Dungeon Master</a></li>
           <li><a href="/players/select">Players</a></li>
+          {{else}}
+          {{/if}}
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
