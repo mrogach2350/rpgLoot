@@ -1,14 +1,11 @@
 <template name="PlayerLayout">
   <header class="container">
-    <div class="col-xs-8">
-      <h2 class="col-xs-6">{{currentPlayer}}</h2>
-      {{#each players}}
-      <h4 class="col-xs-6">Level: {{level}}<br>
-         Class: {{class}}</h4>
-      {{/each}}
-    </div>
-    <div class="col-xs-4">
-      {{> Template.dynamic template=buttons}}
+    <div class="col-xs-12">
+      <h2 class="col-xs-3">{{currentPlayer}}</h2>
+    {{#each players}}
+      <h2 class="col-xs-3">Level: {{level}}</h2>
+      <h2 class="col-xs-6">Class: {{class}}</h2>
+    {{/each}}
     </div>
   </header>
   <main>
