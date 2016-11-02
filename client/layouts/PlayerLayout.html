@@ -1,0 +1,22 @@
+<template name="PlayerLayout">
+  <header class="container">
+    <div class="col-xs-8">
+      <h2 class="col-xs-6">{{currentPlayer}}</h2>
+      {{#each players}}
+      <h4 class="col-xs-6">Level: {{level}}<br>
+         Class: {{class}}</h4>
+      {{/each}}
+</div>
+    <div class="col-xs-4">
+      {{> Template.dynamic template=buttons}}
+    </div>
+  </header>
+  <main>
+    <div class="col-md-6 col-xs-12">
+      {{> Template.dynamic template=first}}
+    </div>
+    <div class="col-md-6 col-xs-12">
+      {{> Template.dynamic template=second}}
+    </div>
+  </main>
+</template>
