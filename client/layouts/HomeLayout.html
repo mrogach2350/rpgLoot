@@ -1,36 +1,29 @@
 <template name="HomeLayout">
     <div class="row">
-      <div id="about" class="col-xs-7">
+    <div id="register" class="col-xs-12 col-md-4">
+      <h2>Getting Started!</h2>
+      <p>
+        Start Up Instructions: <br>
+        1. Create a profile using the login at the top of the screen. In the email box, input an easy to remember term beginning with an "@" sign. <br>
+        2. Distribute the email and password to each player. Everyone in your party will login with the same credentials. <br>
+        3. It is up to the GameMaster to add player characters to the session and needs to be done before PCs can access their views. <br>
+        4. Once logged in, partymemebers will see navigation buttons appear in the top bar. Kindly navigate to your appropriate role.  <br>
+        <strong>5. Adventure! <br>
+          6. Profit!</strong>
+          <hr>
+          <span>Thank you for using rpgLoot, <br><strong>The DM (Digital Maker)</strong></span> <br>
+          Tips: (Currently nothing prevents players from accessing the DM screen, so it's on your honor for now.)
+        </p>
+      </div>
+      <div id="about" class="col-xs-12 col-md-7 col-md-offset-1">
         <h3>About rpgLoot</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
         </p>
         <h3>About Table-Top Role Playing Games</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
-      </div>
-      <div class="col-xs-1">
-
-      </div>
-      <div id="register" class="col-xs-4">
-        <h2>Sign Up!</h2>
-        <p>
-          DM/GM: Please register for an account and sign in!
-          You will be directed to your very own rpgLoot Group Stash!
-          The Group Stash will provide a place for you to imput rewards for your party
-          before the session, and then make them available to the PCs when they have properly earned thier spoils.
-          <hr>
-          <span>Thank you for using rpgLoot, <br><strong>The DM (Digital Maker)</strong></span>
-        </p>
-        <div class="row">
-          <div class="col-xs-12">
-            {{#if currentUser}}
-            <a href="/DM"><button type="button" name="button">Go To DM View</button></a>
-            {{else}}
-            {{/if}}
-          </div>
-        </div>
       </div>
     </div>
 </template>
