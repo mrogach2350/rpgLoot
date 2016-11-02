@@ -1,18 +1,10 @@
 <template name="PlayerItems">
   <div class="title box">
-<<<<<<< HEAD
     {{currentPlayer}}'s stash
   </div>
   <div class="row title-row">
     <div class="box col-xs-2">
       Stash
-=======
-    DM's stash
-  </div>
-  <div class="row title-row">
-    <div class="box col-xs-2">
-      Move
->>>>>>> 1c91285ae9576a91c7850a75bed46cfea7788c4b
     </div>
     <div class="box col-xs-3">
       Name
@@ -32,20 +24,12 @@
   </div>
   {{#each items}}
     <div class="row item-row">
-<<<<<<< HEAD
       <button class="box col-xs-2 toggle-group" type="button"><i class="fa fa-mail-forward"></i></button>
-=======
-      <button class="box col-xs-2 toggle-group" type="button">Group</button>
->>>>>>> 1c91285ae9576a91c7850a75bed46cfea7788c4b
       <span class="box col-xs-3">{{ name }}</span>
       <span class="box col-xs-4">{{ description }}</span>
       <span class="box col-xs-1">{{ weight }}</span>
       <span class="box col-xs-1">{{ quantity }}</span>
-<<<<<<< HEAD
       <button class="box delete col-xs-1"><i class="fa fa-trash"></i></button>
-=======
-      <button class="box delete col-xs-1">&times;</button>
->>>>>>> 1c91285ae9576a91c7850a75bed46cfea7788c4b
     </div>
   {{/each}}
 </template>
