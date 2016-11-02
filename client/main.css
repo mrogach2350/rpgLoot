@@ -58,6 +58,7 @@ img {
   border: 5px solid black;
   margin: 0 2vw;
 }
+<<<<<<< HEAD
 .avail {
   background: green;
 }
@@ -67,3 +68,5 @@ img {
 .delete {
   background: rgba(255, 0, 0, 0.5);
 }
+=======
+>>>>>>> 1c91285ae9576a91c7850a75bed46cfea7788c4b

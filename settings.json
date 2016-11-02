@@ -1,0 +1,8 @@
+{
+  "galaxy.meteor.com": {
+     "env": {
+       "ROOT_URL" : "http://rpgloot.meteorapp.com/",
+       "MONGO_URL": "mongodb://mrogach:123456@ds139847.mlab.com:39847/rpgloot"
+     }
+   }
+}

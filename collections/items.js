@@ -29,12 +29,20 @@ ItemSchema = new SimpleSchema({
     type: Number,
     label: "Quantity"
   },
-  owner: {
+  session: {
     type: String,
-    label: "Owner",
+    label: "Session",
     autoValue: function(){
       return this.userId
     },
+    autoform: {
+      type: "hidden"
+    }
+  },
+  owner: {
+    type: String,
+    label: "Owner",
+    defaultValue: "DM",
     autoform: {
       type: "hidden"
     }
@@ -61,13 +69,13 @@ ItemSchema = new SimpleSchema({
 
 Meteor.methods({
   toggleGroupItem: function(id, currentState) {
-    console.log('calling')
       Items.update(id, {
         $set: {
           inGroupStash: !currentState
         }
       });
     },
+<<<<<<< HEAD
     toggleDMItem: function(id) {
         Items.update(id, {
           $set: {
@@ -75,6 +83,8 @@ Meteor.methods({
           }
         });
       },
+=======
+>>>>>>> 1c91285ae9576a91c7850a75bed46cfea7788c4b
     togglePlayerItem: function(id, newOwner) {
         Items.update(id, {
           $set: {
