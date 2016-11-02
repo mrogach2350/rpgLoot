@@ -6,7 +6,7 @@ Template.allItems.helpers({
     return current.params.characterName;
   },
   items: ()=> {
-    return Items.find({owner: {$ne: 'DM'}});
+    return Items.find({});
   }
 });
 Template.allItems.events({
