@@ -1,0 +1,20 @@
+<template name="SelectLayout">
+  <header class="container">
+    <h1>Choose Your Character!</h1>
+  </header>
+  <main>
+    <div class="row">
+      {{#each players}}
+      <a href="/players/{{characterName}}">
+        <div class="charCont col-xs-6 col-md-3">
+            <img class="col-xs-5" src="{{imageUrl}}" alt=""/>
+          <div class="col-xs-7">
+            <h2>{{characterName}} ({{playerName}})</h2><br>
+            <h4>Level:{{level}}</h4>
+            <h4>Class:{{class}}</h4>
+          </div>
+        </div></a>
+      {{/each}}
+    </div>
+  </main>
+</template>
