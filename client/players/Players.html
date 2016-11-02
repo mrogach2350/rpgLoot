@@ -24,7 +24,11 @@
       <span class="box col-xs-3">{{ playerName }}</span>
       <span class="box col-xs-3">{{ characterName }}</span>
       <span class="box col-xs-3">{{ class }}</span>
-      <span class="box col-xs-2">{{ level }}</span>
+      <span class="box col-xs-2">
+        <i class="fa fa-arrow-down"></i>
+        {{ level }}
+        <i class="fa fa-arrow-up"></i>
+      </span>
       <button class="box delete col-xs-1">&times;</button>
     </div>
   {{/each}}
