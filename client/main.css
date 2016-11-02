@@ -47,8 +47,6 @@ footer{
 .checked {
   background: red;
 }
-<<<<<<< Updated upstream
-=======
 /*SelectLayout*/
 img {
   margin: 5px 0;
@@ -69,4 +67,3 @@ img {
 .delete {
   background: rgba(255, 0, 0, 0.5);
 }
->>>>>>> Stashed changes
