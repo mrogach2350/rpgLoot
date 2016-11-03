@@ -26,7 +26,7 @@ rpgLoot
 
 	`$ meteor npm install`
 
-	 `meteor`
+	 `$ meteor`
 
 	  This will install all the dependencies and then start a Meteor server.
 - 	Navigate in browser to localhost:3000.
@@ -39,7 +39,8 @@ rpgLoot
 
 ##Future Development
 
-- 	Experience tracker and auto-leveling
+- Experience tracker and auto-leveling
 -	Integrating a currency tracker.
-- 	In-app dice roller/Random number generator.
--  Character attribute tracker with stat calculator.
+- In-app dice roller/Random number generator.
+- Character attribute tracker with stat calculator.
+- Pre-fabbed items for quick additions.
