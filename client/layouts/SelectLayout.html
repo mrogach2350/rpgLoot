@@ -5,14 +5,15 @@
   <main>
     <div class="row">
       {{#each players}}
-      <a href="/players/{{characterName}}">
-        <div class="charCont col-xs-5 col-md-3">
-          <img class="col-xs-5" src="{{imageUrl}}" alt=""/>
-          <div class="col-xs-7">
-            <h2>{{characterName}} ({{playerName}})</h2><br>
-            <h4>Level:{{level}}</h4>
-            <h4>Class:{{class}}</h4>
-          </div>
+      <a  href="/players/{{characterName}}">
+        <div id="{{characterName}}" class="charCont col-xs-5 col-md-3">
+          <!-- <img class="col-xs-5" src="{{imageUrl}}" alt=""/> -->
+          <style media="screen">
+            #{{characterName}} {background-image: url('{{this.imageUrl}}');
+                                background-size: cover;}
+          </style>
+          
+          <h2 class="charCardInfo">{{characterName}} ({{playerName}})</h2><br>
         </div></a>
       {{/each}}
     </div>
