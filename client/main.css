@@ -11,7 +11,7 @@ nav {
 footer{
   background: rgb(16, 16, 16);
   color: #9d9d9d;
-  height: 5vh;
+  height: auto;
   width: 100vw;
   display: flex;
   align-items: center;
