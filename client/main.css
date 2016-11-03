@@ -3,12 +3,14 @@ body {
   /*background-image: url('http://i.imgur.com/hIcFKqa.png');*/
   background-image: url('http://i.imgur.com/EqBE9I8.png');
   background-size: contain;
+  font-family: 'Cinzel', serif;
 }
 nav {
   width: 100vw;
 }
 footer{
-  background: rgb(231, 231, 231);
+  background: rgb(16, 16, 16);
+  color: #9d9d9d;
   height: 5vh;
   width: 100vw;
   display: flex;
@@ -24,15 +26,12 @@ footer{
   margin: 5vh 2vw;
 }
 /*HomeLayout.html*/
-#about{
-  background: rgba(255, 0, 0, 0.5);;
-}
-#register {
-  background: rgba(0, 255, 0, 0.5);;
-}
 #about, #register {
   margin-bottom: 5vh;
   border: 5px solid black;
+  font-family: 'Cinzel', serif;
+  background: rgba(0, 0, 0, 0.5);
+  color: rgb(200, 200, 200);;
 }
 #login-buttons {
   line-height: 50px;
@@ -51,6 +50,7 @@ footer{
   background: white;
   width: 100%;
   text-align: center;
+
 }
 .checked {
   background: red;
@@ -82,6 +82,5 @@ img {
   margin-bottom: 5vh;
 }
 #gitLink, .portfolioLink {
-  color: black;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #9d9d9d;
 }
