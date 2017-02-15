@@ -16,6 +16,9 @@ Template.GroupItems.events({
       newOwner = "DM";
     }
     Meteor.call('togglePlayerItem', this._id, newOwner );
+    if (this.inGroupStash){
+      Display.insert({message:' took ' + this.name, owner:newOwner});
+    };
   },
   'click .delete'() {
     Items.remove(this._id);
