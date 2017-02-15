@@ -49,4 +49,10 @@ DisplaySchema = new SimpleSchema({
   }
 });
 
+Meteor.methods({
+  deleteAllPosts: function(){
+    return Display.remove({});
+  }
+});
+
 Display.attachSchema(DisplaySchema);
