@@ -104,3 +104,7 @@ img {
   background-color: white;
   overflow: scroll;
 }
+#clearLog{
+  display: block;
+  margin: 0 auto;
+}
