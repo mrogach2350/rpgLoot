@@ -1,5 +1,6 @@
 Meteor.subscribe('display');
 Meteor.subscribe('items');
+Meteor.subscribe('players');
 
 Template.playerDisplay.helpers({
   display: ()=> {
@@ -30,6 +31,7 @@ Template.playerDisplay.events({
     Display.insert({message: ' rolled a d20 for '+ roll(20), owner:FlowRouter.current().params.characterName || 'DM'})
   },
   'click #clearLog'(){
-    Meteor.call('deleteAllPosts');
+    var userId = Meteor.connection._userId;
+    Meteor.call('deleteAllPosts', userId);
   }
 })

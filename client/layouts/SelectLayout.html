@@ -3,7 +3,7 @@
     <h1>Choose Your Character!</h1>
   </header>
   <main>
-    <div class="row">
+    <div class="row smallSpace">
       {{#each players}}
       <a  href="/players/{{characterName}}">
         <div id="{{characterName}}" class="charCont col-xs-5 col-md-3">
@@ -18,5 +18,5 @@
       {{/each}}
     </div>
   </main>
-  {{Template.dynamic template=footer}}
+  {{>Template.dynamic template=footer}}
 </template>

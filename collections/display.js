@@ -50,8 +50,8 @@ DisplaySchema = new SimpleSchema({
 });
 
 Meteor.methods({
-  deleteAllPosts: function(){
-    return Display.remove({});
+  deleteAllPosts: function(id){
+    return Display.remove({session: id});
   }
 });
 
