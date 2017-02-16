@@ -12,10 +12,11 @@
             #{{characterName}} {background-image: url('{{this.imageUrl}}');
                                 background-size: cover;}
           </style>
-          
+
           <h2 class="charCardInfo">{{characterName}} ({{playerName}})</h2><br>
         </div></a>
       {{/each}}
     </div>
   </main>
+  {{Template.dynamic template=footer}}
 </template>

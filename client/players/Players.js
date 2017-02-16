@@ -16,7 +16,13 @@ Template.SelectLayout.helpers({
 Template.Players.events({
   'click .delete'() {
     Display.insert({message:' has left the party', owner: this.characterName});
-    Players.remove(this._id);
+    Items.update(this.characterName, {
+      $set: {
+          owner: 'Group',
+          inGroupStash: true
+      }
+    });
+    // Players.remove(this._id);
   },
   'click .fa-arrow-down'(){
     Display.insert({message:' has lost a level!', owner: this.characterName});
