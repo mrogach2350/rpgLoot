@@ -97,3 +97,14 @@ img {
 #gitLink, .portfolioLink {
   color: #9d9d9d;
 }
+#textConsole{
+  border: 3px solid black;
+  height: 40vh;
+  width: auto;
+  background-color: white;
+  overflow: scroll;
+}
+#clearLog{
+  display: block;
+  margin: 0 auto;
+}

@@ -4,3 +4,6 @@ Meteor.publish('items', function(){
 Meteor.publish('players', function(){
   return Players.find({session: this.userId});
 });
+Meteor.publish('display', function(){
+  return Display.find({});
+});

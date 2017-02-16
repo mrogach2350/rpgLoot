@@ -1,6 +1,6 @@
 <template name="PlayerLayout">
   <header class="container">
-    <div class="col-xs-12">
+    <div class="col-md-8 col-md-offset-4 col-xs-12">
       <h2 class="col-xs-3">{{currentPlayer}}</h2>
     {{#each players}}
       <h2 class="col-xs-3">Level: {{level}}</h2>
@@ -9,11 +9,17 @@
     </div>
   </header>
   <main>
-    <div class="col-md-6 col-xs-12">
-      {{> Template.dynamic template=first}}
+    <div class="col-md-4 col-xs-12">
+      {{> Template.dynamic template=display}}
     </div>
-    <div class="col-md-6 col-xs-12">
-      {{> Template.dynamic template=second}}
+    <div class="col-md-8 col-xs-12">
+      <div class="col-xs-12">
+        {{> Template.dynamic template=first}}
+      </div>
+      <div class="col-xs-12">
+        {{> Template.dynamic template=second}}
+      </div>
     </div>
+
   </main>
 </template>

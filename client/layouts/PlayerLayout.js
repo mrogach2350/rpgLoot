@@ -7,10 +7,8 @@ Template.PlayerLayout.helpers({
   },
   players: ()=> {
     var current = FlowRouter.current();
-    console.log(current);
     var searchName = current.params.characterName
     var currentPlayer = Players.find({characterName: searchName });
-    console.log(currentPlayer);
     return(currentPlayer)
   }
 });
